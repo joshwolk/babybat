@@ -218,5 +218,18 @@ document.ontouchstart = evt => birthday.onClick(evt)
     
   }).scroll();
 
+    function getRandomImage() {
+      var images = ['../pictures/img1.jpg', '../pictures/img2.jpg', '../pictures/img3.jpg'];
+      var image = images[Math.floor(Math.random()*images.length)];
+
+      return image;
+    }
+
+    function displayRandomImage() {
+      var htmlImage = document.getElementById("randomImage");
+      htmlImage.src = getRandomImage();
+    }
+
+
 
   
